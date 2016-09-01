@@ -13,7 +13,6 @@ cookbook 'flink', github: "hopshadoop/flink-chef", branch: "v1.0.3"
 
 cookbook 'livy', github: "hopshadoop/livy-chef", branch: "v0.3.0"
 cookbook 'zeppelin', github: "hopshadoop/zeppelin-chef", branch: "v0.6.0"
-cookbook 'drelephant', github: "hopshadoop/dr-elephant-chef", branch: "v2.0.3"
 cookbook 'epipe', github: "hopshadoop/epipe-chef", branch: "v0.2.2"
 cookbook 'adam', github: "biobankcloud/adam-chef", branch: "master"
 cookbook 'dela', github: "hopshadoop/dela-chef", branch: "master"

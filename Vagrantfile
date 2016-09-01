@@ -43,8 +43,6 @@ Vagrant.configure("2") do |c|
   c.vm.network(:forwarded_port, {:guest=>9009, :host=>33100})
 # Ooozie port
   c.vm.network(:forwarded_port, {:guest=>11000, :host=>34100})
-# Dr Elephant
-#  c.vm.network(:forwarded_port, {:guest=>11011, :host=>35100})
 # Spark History Server
   c.vm.network(:forwarded_port, {:guest=>18080, :host=>36100})
 # Dela udp ports
@@ -175,16 +173,6 @@ Vagrant.configure("2") do |c|
    	  	       "private_ips" => ["10.0.2.15"]
 	       },
      },
-     "drelephant" => {
-	  "default" =>      { 
-   	  	       "private_ips" => ["10.0.2.15"]
-	       },
-     },
-     "dela" => {
-	  "default" =>      { 
-   	  	       "private_ips" => ["10.0.2.15"]
-	       },
-     },
      "kagent" => {
           "enabled" => "true",
 	  "default" =>      { 
@@ -221,7 +209,6 @@ Vagrant.configure("2") do |c|
       chef.add_recipe "livy::install"
       chef.add_recipe "adam::install"
     #  chef.add_recipe "oozie::install"
-    #  chef.add_recipe "drelephant::install"
       chef.add_recipe "kkafka::install"
       chef.add_recipe "dela::install"
       chef.add_recipe "ndb::mgmd"
@@ -245,7 +232,6 @@ Vagrant.configure("2") do |c|
       chef.add_recipe "kzookeeper::default"
       chef.add_recipe "kkafka::default"
       chef.add_recipe "adam::default"
-    #  chef.add_recipe "drelephant::default"
       chef.add_recipe "kagent::default"
     #  chef.add_recipe "oozie::default"
       chef.add_recipe "dela::default"

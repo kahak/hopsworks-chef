@@ -29,7 +29,6 @@ depends 'livy'
 depends 'oozie'
 depends 'kkafka'
 depends 'kzookeeper'
-depends 'drelephant'
 depends 'dela'
 depends 'java'
 
