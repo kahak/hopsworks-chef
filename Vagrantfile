@@ -87,8 +87,10 @@ Vagrant.configure("2") do |c|
 	  "default" =>      { 
    	  	       "private_ips" => ["10.0.2.15"]
 	       },
+     "hops_site_domain" => "bbc1.sics.se",
+     "hops_site_port" => 25100,
 	  "gmail" =>      { 
-   	  	       "email" => "johan@gmail.com"
+   	  	       "email" => "dela@gmail.com"
 	       },
 	"war_url" => "http://snurran.sics.se/hops/hopsworks-johan.war",
         "user_envs" => "false",

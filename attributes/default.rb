@@ -13,7 +13,7 @@ node.default.glassfish.variant             = "payara"
 node.default.glassfish.user                = "glassfish"
 node.default.glassfish.group               = "glassfish-admin"
 node.default.hopsworks.admin.port          = 4848
-node.default.hopsworks.port                = "8080"
+node.default.hopsworks.port                = "8080"  
 node.default.glassfish.admin.port          = node.hopsworks.admin.port
 node.default.glassfish.port                = node.hopsworks.port.to_i
 # payara-4.1.153.zip
@@ -97,8 +97,10 @@ default.glassfish.ciphersuite				= "+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256,+TL
 # Dela
 #
 
-default.hopsworks.dela.domain                 = "bbc1.sics.se"
+default.hopsworks.hops_site_domain       	  = "bbc1.sics.se"
+default.hopsworks.hops_site_port         	  = node.default.hopsworks.port
+default.hopsworks.hops_site_base_uri     	  = "http://#{node.hopsworks.hops_site_domain}:#{node.hopsworks.hops_site_port}/hops-site/webresources"
+default.hopsworks.public_search_endpoint 	  = "http://#{node.hopsworks.hops_site_domain}:#{node.hopsworks.hops_site_port}/hopsworks/api/elastic/publicdatasets/"
 default.hopsworks.dela.certifcate             = "DummyCert25100"
-default.hopsworks.dela.hops_site_base_uri     = "http://bbc1.sics.se:25100/hops-site/webresources"
-default.hopsworks.dela.public_search_endpoint =  "hopsworks/api/elastic/publicdatasets/"
+
 

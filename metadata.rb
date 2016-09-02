@@ -191,6 +191,14 @@ attribute "hopsworks/max_num_proj_per_user",
           :description => "Maximum number of projects that can be created by each user",
           :type => 'string'
 
+attribute "hopsworks/hops_site_domain",
+          :description => "Hops site domain",
+          :type => 'string'
+
+attribute "hopsworks/hops_site_port",
+          :description => "Hops site port",
+          :type => 'string'
+
 attribute "glassfish/package_url",
           :description => "Url for the Glassfish distribution zip file.",
           :type => 'string'
