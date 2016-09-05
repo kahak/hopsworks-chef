@@ -93,7 +93,7 @@ Vagrant.configure("2") do |c|
         "war_url" => "http://snurran.sics.se/hops/hopsworks-johan.war",
         "user_envs" => "false",
         "domain" => "bbc1.sics.se",
-        "public_port" => 25100
+        "public_port" => 25100,
      },
      "zeppelin" => {
 	  "default" =>      { 
