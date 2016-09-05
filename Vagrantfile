@@ -196,8 +196,8 @@ Vagrant.configure("2") do |c|
         },
      },
      "hops_site" => {
-        domain => "bbc1.sics.se",
-        public_port => 25100, 
+        "domain" => "bbc1.sics.se",
+        "public_port" => 25100, 
      },
      "vagrant" => "true",
      }
