@@ -195,10 +195,6 @@ attribute "hopsworks/hops_site_domain",
           :description => "Hops site domain",
           :type => 'string'
 
-attribute "hopsworks/hops_site_port",
-          :description => "Hops site port",
-          :type => 'string'
-
 attribute "glassfish/package_url",
           :description => "Url for the Glassfish distribution zip file.",
           :type => 'string'
@@ -237,6 +233,22 @@ attribute "java/jdk_version",
 
 attribute "java/install_flavor",
           :display_name =>  "Oracle (default) or openjdk",
+          :type => 'string'
+
+attribute "hopsworks/domain",
+          :description => "Hopsworks public domain",
+          :type => 'string'
+
+attribute "hopsworks/public_port",
+          :description => "Hopsworks public port",
+          :type => 'string'
+
+attribute "hops_site/domain",
+          :description => "Hops site public domain",
+          :type => 'string'
+
+attribute "hops_site/public_port",
+          :description => "Hops site public port",
           :type => 'string'
 
 

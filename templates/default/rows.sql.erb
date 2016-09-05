@@ -149,14 +149,14 @@ INSERT INTO hosts(hostid, hostname_) VALUES <%= @hosts %>;
 -- dela
 --
 
-INSERT INTO variables VALUES ("domain","<%= node.hopsworks.hops_site_domain %>");
+INSERT INTO variables VALUES ("hopsworks_domain","<%= node.hopsworks.domain %>");
 
-INSERT INTO variables VALUES ("certificate","<%= node.hopsworks.dela.certifcate %>");
+INSERT INTO variables VALUES ("hopsworks_public_port","<%= node.hopsworks.public_port %>");
 
-INSERT INTO variables VALUES ("gvod_rest_endpoint","http://<%= @dela_ip %>:<%= @dela_port %>");
+INSERT INTO variables VALUES ("hopsworks_certificate","<%= node.hopsworks.certificate %>");
 
-INSERT INTO variables VALUES ("hops_site_base_uri","<%= node.hopsworks.hops_site_base_uri %>");
+INSERT INTO variables VALUES ("dela_endpoint","http://<%= @dela_ip %>:<%= @dela_port %>");
+
+INSERT INTO variables VALUES ("hops_site_endpoint","<%= node.hops_site.endpoint %>");
 
 INSERT INTO variables VALUES ("public_search_endpoint","<%= node.hopsworks.public_search_endpoint %>");
-
-INSERT INTO variables VALUES ("rest_port","<%= node.hopsworks.port %>");

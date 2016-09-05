@@ -84,16 +84,16 @@ Vagrant.configure("2") do |c|
           "enabled" => "true",
      },
      "hopsworks" => {
-	  "default" =>      { 
-   	  	       "private_ips" => ["10.0.2.15"]
-	       },
-     "hops_site_domain" => "bbc1.sics.se",
-     "hops_site_port" => 25100,
-	  "gmail" =>      { 
-   	  	       "email" => "dela@gmail.com"
-	       },
-	"war_url" => "http://snurran.sics.se/hops/hopsworks-johan.war",
+        "default" => {
+            "private_ips" => ["10.0.2.15"]
+        },
+        "gmail" =>      { 
+            "email" => "dela@gmail.com"
+        },
+        "war_url" => "http://snurran.sics.se/hops/hopsworks-johan.war",
         "user_envs" => "false",
+        "domain" => "bbc1.sics.se",
+        "public_port" => 25100
      },
      "zeppelin" => {
 	  "default" =>      { 
@@ -195,6 +195,10 @@ Vagrant.configure("2") do |c|
           "private_ips" => ["10.0.2.15"]
         },
      },
+     "hops_site" => {
+        domain => "bbc1.sics.se",
+        public_port => 25100, 
+     }
      "vagrant" => "true",
      }
 
