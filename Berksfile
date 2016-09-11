@@ -15,7 +15,7 @@ cookbook 'zeppelin', github: "hopshadoop/zeppelin-chef", branch: "master"
 cookbook 'drelephant', github: "hopshadoop/dr-elephant-chef", branch: "master"
 cookbook 'epipe', github: "hopshadoop/epipe-chef", branch: "master"
 cookbook 'adam', github: "biobankcloud/adam-chef", branch: "master"
-cookbook 'dela', github: "hopshadoop/dela-chef", branch: "master"
+cookbook 'dela', '~>0.1.0',github: "hopshadoop/dela-chef", branch: "master"
 
 cookbook 'kzookeeper', github: "hopshadoop/kzookeeper", branch: "v3.4.7"
 cookbook 'kkafka', github: "hopshadoop/kafka-cookbook", branch: "v0.10.0.0"
