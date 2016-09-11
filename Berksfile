@@ -1,6 +1,5 @@
 Encoding.default_external = "UTF-8"
 source 'https://supermarket.chef.io'
-metadata
 
 cookbook 'java'
 
@@ -34,3 +33,5 @@ cookbook 'ntp', '~> 2.0.0'
 #cookbook 'tensorflow', github: "hopshadoop/tensorflow-chef", branch: "master"
 
 #cookbook 'collectd', github: "hopshadoop/collectd-chef", branch: "master"
+
+metadata
