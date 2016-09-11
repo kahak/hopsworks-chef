@@ -12,6 +12,26 @@ source_url       "https://github.com/hopshadoop/hopsworks-chef"
   supports os
 end
 
+depends 'glassfish'
+depends 'ndb'
+depends 'kagent'
+depends 'hops'
+depends 'elastic'
+depends 'hadoop_spark'
+depends 'flink'
+depends 'zeppelin'
+depends 'compat_resource'
+depends 'ulimit2'
+depends 'authbind'
+depends 'apache_hadoop'
+depends 'epipe'
+depends 'livy'
+depends 'oozie'
+depends 'kkafka'
+depends 'kzookeeper'
+depends 'drelephant'
+depends 'dela'
+depends 'java'
 
 #link:Click <a target='_blank' href='https://%host%:4848'>here</a> to launch Glassfish in your browser (http)
 recipe  "hopsworks::install", "Installs Glassfish"
