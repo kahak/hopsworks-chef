@@ -30,7 +30,7 @@ depends 'oozie'
 depends 'kkafka'
 depends 'kzookeeper'
 depends 'drelephant'
-depends 'dela'
+depends 'dela', '~>0.1.0'
 depends 'java'
 
 #link:Click <a target='_blank' href='https://%host%:4848'>here</a> to launch Glassfish in your browser (http)
